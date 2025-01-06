@@ -6,7 +6,7 @@ const NavUse=({auth,setAuth})=>{
     return(
 <div>
 
-        <Navbar bg="yellow" data-bs-theme="yellow">
+        <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
                 <Nav.Link as={Link}to='/ListUsers'>My APP</Nav.Link>
                 <Nav className="me-auto">
@@ -15,11 +15,11 @@ const NavUse=({auth,setAuth})=>{
                     {
                         auth ?
                         <>
-        <Nav.Link as={Link} to ='/ListUsers'>Users</Nav.Link>
+        <Nav.Link as={Link} to ='/ListUser'>Users</Nav.Link>
         <Nav.Link onClick={()=>setAuth(false)}>Logout</Nav.Link>
         </>
         :
-        <Nav.Link onClick={()=>setAuth(false)}>Logout</Nav.Link>
+        <Nav.Link onClick={()=>setAuth(true)}>Login</Nav.Link>
                     }
                 
                 </Nav>

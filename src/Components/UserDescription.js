@@ -33,7 +33,7 @@ useEffect(()=>{
                     <Card.Text>
                         {user.email}
                         <br/>
-                        {user.adress.street}
+                        {user.address.street}
                     </Card.Text>
                     </Card.Body>
                     </Card>
